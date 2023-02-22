@@ -6,12 +6,11 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header"></header>
+        <h1>📖 Dictionary</h1>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="sunset" />
         </main>
-        <footer className="text-center">
-          Coded with ❤️ by Yandia Alexis and is {" "}
-        </footer>
+        <footer className="App-footer">Coded with ❤️ by Yandia Alexis</footer>
       </div>
     </div>
   );
