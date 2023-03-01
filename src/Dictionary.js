@@ -17,11 +17,6 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    search();
-  }
-
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
