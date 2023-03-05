@@ -10,7 +10,25 @@ export default function App() {
         <main>
           <Dictionary defaultKeyword="book" />
         </main>
-        <footer className="App-footer">Coded with ❤️ by Yandia Alexis</footer>
+        <footer className="App-footer">
+          Coded with ❤️ by Yandia Alexis and is
+          <a
+            href="https://github.com/yand160/dictionary-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            open-sourced on Github
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://strong-vacherin-76b3b8.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify.
+          </a>
+        </footer>
       </div>
     </div>
   );

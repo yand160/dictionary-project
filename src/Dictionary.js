@@ -23,13 +23,19 @@ export default function Dictionary(props) {
     axios.get(apiUrl).then(handleDictionaryResponse);
     let pexelsApiKey =
       "6pZsC5dKBV1iNt33G7VzqZA4Xvl9niom2Rkp9s5LeFWt119mqC5QJlAS";
-    let pexelsApiUrl =
-      "https://api.shecodes.io/images/v1/search?query=book&key=7eo5ded69c3ffa8b7taebbf0b44b9fb2";
+    let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=7eo5ded69c3ffa8b7taebbf0b44b9fb2`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
   function handleKeywordChange(event) {
+    setKeyword(event.target.value);
+    console.log(event.target.value);
     setKeyword(event.target.value);
   }
 
@@ -43,7 +49,7 @@ export default function Dictionary(props) {
       <div className="Dictionary">
         <section>
           <h1>What word would you like to look up?🤔</h1>
-          <form onSubmit={search}>
+          <form onSubmit={handleSubmit}>
             <input
               type="search"
               onChange={handleKeywordChange}
