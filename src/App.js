@@ -17,12 +17,11 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             open-sourced on Github
           </a>{" "}
           and{" "}
           <a
-            href="https://strong-vacherin-76b3b8.netlify.app/"
+            href="https://app.netlify.com/sites/strong-vacherin-76b3b8/overview"
             target="_blank"
             rel="noopener noreferrer"
           >
