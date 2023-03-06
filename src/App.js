@@ -21,11 +21,11 @@ export default function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://app.netlify.com/sites/strong-vacherin-76b3b8/overview"
+            href="https://strong-vacherin-76b3b8.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hosted on Netlify.
+            hosted on Netlify
           </a>
         </footer>
       </div>
